@@ -1,0 +1,637 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+  #div1{
+    border: 1px solid  #007bff;
+;
+    background-color: #007bff;
+    height: 80px;
+    margin: auto;
+  }  
+  #ul{
+    list-style: none;
+    display: inline;
+    cursor: pointer;
+  }  
+  li{
+    display: inline-block;
+    font-size: 20px;
+    float: right;
+    position: relative;
+    top: -70px;
+    bottom: -70px;
+    padding: 10px;
+    justify-content: flex-end;
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+  } 
+  li:hover{
+    color: black;
+  } 
+  body{
+   width: 100%; 
+   height:100% ;
+   margin: 0;
+   padding-top: 0;
+   overflow: hidden;
+   position: relative;
+   overflow: scroll;
+
+}
+#e{
+    margin-left: 80px;
+    color: white;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    
+}
+#img{
+  overflow: scroll;
+  position: relative;
+  top: -60px;
+  bottom: -60px;
+  width: 100%;
+  height: 100%;
+}
+#america{
+  position: absolute;
+  top: 50px;
+  bottom: 50px;
+  left: 490px;
+  right: 490px;
+  color:#0adef8;
+  font-size: 80px;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+#tour{
+position: absolute;
+top: 150px;
+bottom: 150px;
+right: 350px;
+left: 350px;
+color: white;
+font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+font-size: 80px;
+}
+#container{
+  border: 1px solid white;
+  width: 170px;
+  height: 40px;
+  position: absolute;
+  top: 527px;
+  bottom: 527px;
+  left: 180px;
+  right: 180px;
+  text-align: center;
+  font-size: 20px;
+  line-height: 40px;
+  background-color: white;
+  color: #0a4668;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  
+}
+.read{
+  position: absolute;
+  top: 350px;
+  bottom: 350px;
+  right: 600px;
+  left: 600px;
+  width: 200px;
+  height: 6%;
+  border-radius: 20px;
+  border: 1px solid #ee580f;
+  background-color: #ee580f;
+  font-size: 17px;
+  color: white;
+  box-shadow: 30px;
+}
+  .read:hover{
+    color: black;
+    cursor: pointer;
+  }
+  #fs{
+    position: absolute;
+    top: 570px;
+  bottom: 570px;
+  right: 180px;
+  left: 180px;
+  height: 200px;
+  width: 550px;
+  background: white;
+  border: 1px solid transparent;
+  
+  }
+  input{
+    width: 300px;
+    height: 40px;
+    outline: #666666;
+  
+  }
+  input[type="text"]::-webkit-input-placeholder{
+    color: #c2c4c4;
+  }
+  td,p{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: #666666;
+    font-size: 15px;
+    margin-bottom: 5px;
+  }
+  input:hover{
+    font-size: 20px;
+    color: #666666;
+
+  }
+  #search{
+    position: absolute;
+    top: 530px;
+    bottom: 530px;
+    width: 100px;
+    height: 40px;
+    background-color: #ee580f;
+    color: white;
+    border: 1px solid #ee580f;
+    font-size: 17px;
+    position: absolute;
+    right: 1065px;
+    left: 1065px;
+    border-radius: 15px;
+    border-bottom-right-radius: 0px;
+    border-bottom-left-radius: 0px;
+
+  }
+  #search:hover{
+    color: black;
+    cursor: pointer;
+  }
+  #about{
+    position: absolute;
+    top: 800px;
+    bottom: 800px;
+    right: 410px;
+    left: 410px;
+    justify-content: center;
+    font-size: 50px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+  }
+  #span{
+    position: absolute;
+    top: -2px;
+    bottom: -2px;
+    left: 420px;
+    right:  420px;
+  }
+  #id1{
+    position: absolute;
+    top: 900px;
+    bottom: 900px;
+    color: black;
+    right: 100px;
+    left: 100px;
+    font-size: 19px;
+    text-align: justify;
+padding: 10px;
+font-family: Arial, Helvetica, sans-serif;
+  }
+  #border{
+    width: 800px;
+    height: 400px;
+    position: absolute;
+    top: 1010px;
+    bottom: 1010px;
+    right: 260px;
+    left: 260px;
+    border-left: 15px solid #077f9b;
+    border-right: 15px solid #0c1e43;
+    border-radius: 5px;
+    border-top: 15px solid #077f9b;
+    border-bottom: 15px solid #0c1e43;
+    justify-content: first baseline;
+    font-size: 18px;
+    line-height: 30px;
+    margin-left: 0px;
+    margin-right: 40px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  #img1{
+    position: absolute;
+    top: 1300px;
+    bottom: 1300px;
+    right: 280px;
+    left: 280px;
+    height: 180px;
+    width: 400px;
+    padding-left: 5px;
+    border-radius: 5px;
+  }
+  #img2{
+    width: 300px;
+    height: 200px;
+    position: absolute;
+    top: 1050px;
+  bottom: 1050px;
+  right: 810px;
+  left: 810px;
+  border-radius: 5px;
+  }
+  #img3{
+    width: 400px;
+    height: 170px;
+    position: absolute;
+    top: 1310px;
+    bottom: 1310px;
+    right: 700px;
+    left: 700px;
+    border-radius: 5px;
+  }
+  #travel{
+    position: absolute;
+    top: 1500px;
+    bottom: 15 00px;
+    right: 410px;
+    left: 410px;
+    justify-content: center;
+    font-size: 50px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+  }
+  #t{
+    position: absolute;
+    top: -2px;
+    bottom: -2px;
+    left: 380px;
+    right:  380px;
+
+  }
+  #mountain{
+    position: absolute;
+    top: 1650px;
+    bottom: 1650px;
+    right: 170;
+    left: 170px;
+  }
+  #bus{
+    position: absolute;
+    top: 1650px;
+    bottom: 1650px;
+    right: 460px;
+    left: 460px;
+
+  }
+  #world{
+    position: absolute;
+    top: 1650px;
+    bottom: 1650px;
+    right: 760px;
+    left: 760px;
+
+  }
+  #rest{
+    position: absolute;
+    top: 1650px;
+    bottom: 1650px;
+    right: 1070px;
+    left: 1070px;
+
+  }
+  #M{
+    position: absolute;
+    top: 1800px;
+    bottom: 1800px;
+    font-size: 30PX;
+    left: 130PX;
+    right: 130PX;
+    color: black;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+  }
+  #B{
+    position: absolute;
+    top: 1800px;
+    bottom: 1800px;
+    font-size: 30PX;
+    left: 460PX;
+    right: 460PX;
+    color: black;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+  }
+  #D{
+    position: absolute;
+    top: 1800px;
+    bottom: 1800px;
+    font-size: 30PX;
+    left: 700PX;
+    right: 700PX;
+    color: black;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    justify-content: center;
+
+  }
+  #c{
+    position: absolute;
+    top: -1px;
+    bottom: -1px;
+    left: 150px;
+    right:  150px;
+  }
+#R{
+  position: absolute;
+    top: 1800px;
+    bottom: 1800px;
+    font-size: 30PX;
+    left: 1070PX;
+    right: 1070PX;
+    color: black;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    justify-content: center;
+
+}#id{
+  position: absolute;
+    top: -1px;
+    bottom: -1px;
+    left: 130px;
+    right:  130px;
+
+}
+#newyork{
+  position: absolute;
+    top: 1900px;
+    bottom: 1900px;
+    right: 360px;
+    left: 360px;
+    justify-content: center;
+    font-size: 50px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+
+}
+#l{
+  position:absolute;
+  top: 0px;
+  bottom: 0px;
+  right: 530px;
+  left: 530px;
+}
+#p{
+  position: absolute;
+  top: 2000px;
+ bottom: 2000px;
+ color: black;
+ text-align: center;
+ margin-left: 20px;
+ margin-right: 20px;
+ font-family: Arial, Helvetica, sans-serif;
+ right: 40px;
+ left: 40px;
+ font-size: 19px;
+
+
+}
+#ny{
+  position: absolute;
+  top: 2090px;
+  bottom: 2090px;
+  right: 280px;
+  left: 280px;
+  width: 800px;
+}
+#blogs{
+  position: absolute;
+    top: 2550px;
+    bottom: 2550px;
+    right: 400px;
+    left: 400px;
+    justify-content: center;
+    font-size: 50px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+
+
+}
+#america{
+  position: absolute;
+  top: 2750px;
+  botom: 2750px;
+  width: 500px;
+  height: 300px;
+  right: 100px;
+  left: 100px;
+}
+  #our{
+    position: absolute;
+    top: 2630px;
+    bottom: 2630px;
+    color: black;
+    right: 100px;
+    left: 100px;
+    font-size: 19px;
+    text-align: justify;
+padding: 10px;
+font-family: Arial, Helvetica, sans-serif;
+
+  }
+  #family{
+    position: absolute;
+  top: 2750px;
+  botom: 2750px;
+  width: 500px;
+  height: 300px;
+  right: 700px;
+  left: 700px;
+
+  }
+  a{
+    text-decoration: none;
+    color: white;
+  }
+  a:hover{
+    color: black;
+  }
+  #contact{
+    width: 1350px;
+    height: 700px;
+    background: rgb(5, 5, 66);
+    position: absolute;
+    top: 3200px;
+    bottom: 3200px;
+     overflow-x: hidden;
+  }
+  #last{
+    position: absolute;
+    top: 3250px;
+    bottom: 3250px;
+    color: white;
+    font-size: 30px;
+    word-spacing: 40px;
+    margin-left: 30px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  #address{
+    position: absolute;
+    top: 3320px;
+    bottom: 3320px;
+    font-size: 20px;
+    color: white;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin-left:30px ;
+
+  }
+  #pp{
+    position: absolute;
+    top: 3320px;
+    bottom: 3320px;
+    left: 300px;
+    right: 300px;
+    font-size: 20px;
+    color: white;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin-left:30px ;
+    line-height: 30px;
+    
+
+  }
+  #type{
+    position: absolute;
+    top: 3340px;
+    bottom: 3340px;
+    left: 550px;
+    right: 550px;
+
+  }
+  #type2{
+    position: absolute;
+    top: 3340px;
+    bottom: 3340px;
+    left: 900px;
+    right: 900px;
+    right: 900px;
+
+  }
+  #type3{
+    position: absolute;
+    top: 3400px;
+    bottom: 3400px;
+    left: 550px;
+    right: 550px;
+    
+
+  }
+  textarea:hover{
+    font-size: 20px;
+    color: #666666;
+
+  }
+  input[type="textarea"]::-webkit-input-placeholder{
+    color: #c2c4c4;}
+    textarea{
+      font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: #666666;
+    font-size: 15px;
+    margin-bottom: 5px;
+
+    }
+      
+    </style>
+</head>
+<body>
+<header>  
+<div id="div1">
+<h1 id="e">Eforlad</h1>    
+<ul id="ul">
+    <li> <a href="#last">Contact us</a></li>    
+    <li> <a href="#blogs">Blog</a></li>
+    <li > <a href="#newyork">Travel</a></li>
+    <li> <a href="#about">About</a></li>
+<li>Home</li>
+</ul>    
+
+</div>  
+</header> 
+<div><img src="./img/banner.jpg" alt="error" id="img"></div>
+<h1 id="america">AMERICA</h1>
+<h1 id="tour">AMAZING TOUR</h1>
+<div id="container"> <span>Find Your Tour</span></div>
+
+<button class="read">Read me</button>
+<form>
+<fieldset id="fs">
+  <table>
+    <tr>
+  <td style="padding-right: 10px;"><p> Keyword<input type="text" class="table"></p></td>
+  <td><p>Category<input type="text" placeholder="Any" class="table"></p></td>
+  <td style="padding-left: 10px;"><p>Min price<input type="number" placeholder="00.0" class="table"></p></td>
+</tr>
+<tr>
+  <td><p>Duration<input type="text" placeholder="Any" class="table"></p></td>
+  <td><p>Date<input type="date" style="color:#666666;"></p></td>
+  <td style="padding-left: 10px;"><p>Max price<input type="number" name="" id="" placeholder="00.0" class="table"></p></td>
+  
+</tr>
+</table>
+</fieldset>  
+<button id="search">Search</button>
+
+</form>
+<h1 id="about"> About Our Travel  <span id="span">Agency</span></h1>
+<p id="id1">At our travel agency, we are comited to providing sustainable travel experiences that promote conservation,support local communities,and raise environmental awarness. during our tours,you'll have oppotunity to immerse yourself in nature while learning about local conservation efforts</p>
+<div id="border">An America tour is an incredible <br>way to explore the diverse landscapes, vibrant cities,  <br>and rich culture of the United States <br> From the iconic landmarks of New York City, such as the Statue <br> of Liberty and Times Square, to the natural wonders <br>of the Grand Canyon and Yosemite National Park,  <br>there is something for everyone You can immerse yourself in the history and <br>charm of cities like Boston and Washington D.C. also
+
+  </div>
+  <img src="./img/download.jpg" alt="error" id="img1">
+  <img src="./img/washing dc.jpg" alt="error" id="img2">
+  <img src="./img/newyork.jpg" alt="error" id="img3">
+  <h1 id="travel">Select Offer For  <span id="t">Traveling</span></h1>
+  <img src="./img/travel-icon2.png" alt="" id="mountain">
+  <img src="./img/travel-icon3.png" alt="" id="bus">
+  <img src="./img/travel-icon.png" alt="" id="world">
+  <img src="./img/travel-icon4.png" alt="error" id="rest">
+  <p id="M">MOUNTAINS TOUR</p>
+  <p id="B">BUS TOURS</p>
+  <p id="D">DIFFERENT <span id="c">COUNTRYS</span> </p>
+  <p id="R">SUMMER <span id="id">REST</span></p>
+  <h1 id="newyork" >Weekend In New York      <span id="l">  Londan</span></h1>
+  <p id="p">New York is undoubtedly one of the most popular destinations in the world, due not only to its museums, galleries, and Broadway shows, but also <br>to its sporting events, shopping, and food areas. If you plan to visit this city,New York is home to so many iconic American images that  <br>its impossible to see it all on a short trip. </p>
+  <img src="./img/newyork (2).jpg" alt="error" id="ny">
+  <h1 id="blogs">Our Blogs</h1>
+  <p id="our"> New York City is known for its iconic landmarks like the Statue of Liberty and Times Square. Los Angeles offers beautiful beaches and the famous Hollywood sign. If you're into nature, you can explore the stunning landscapes of the Grand Canyon or visit the breathtaking national parks like Yellowstone or Yosemite.</p>
+  <img src="./img/America-visit-tips-1.jpg" alt="error" id="america">
+  <img src="./img/images.jpg" alt="error" id="family">
+  <img src="./img/bg.jpg" alt="" id="contact">
+  <h1 id="last">CONTACTUS    ADDITIONALLINKS     CONTACT</h1>
+  <p id="address">123 Second Street Fifth <br>
+    <br>
+    Avenue,
+    Manhattan, New York
+    <br>
+    <br>
+    +987 654 3210</p>
+    <p id="pp">About us
+      <br>
+      Terms and conditions
+      <br>
+      Privacy policy
+      <br>
+      News
+      <br>
+      Contact us</p>
+      <form>
+      <table>
+        <tr>
+         <td id="type"><input type="text" name="" id="" placeholder="Name"></td> 
+         <td id="type2"><input type="email" name="" id="" placeholder="Email"></td>
+        </tr>
+        <tr>
+          <td id="type3" ><textarea cols="60" rows="5" placeholder="comment" ></textarea></td>
+        </tr>
+      </table>  
+      </form>
+      
+</body>
+</html>
